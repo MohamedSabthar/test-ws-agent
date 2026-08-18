@@ -9,7 +9,6 @@ title = "test"
 sticky = true
 
 [[dependency]]
-org="ballerinax"
-name="ai.wso2.integration"
-version="0.1.0"
-repository="local"
+org="ballerina"
+name="ai"
+version="1.13.0"
