@@ -7,8 +7,3 @@ title = "test"
 
 [build-options]
 sticky = true
-
-[[dependency]]
-org="ballerina"
-name="ai"
-version="1.13.0"
