@@ -19,3 +19,5 @@ endpoints:
     type: WS
     networkVisibilities:
       - Project
+      - Organization
+      - Public
