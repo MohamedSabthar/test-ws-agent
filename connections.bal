@@ -1,3 +1,3 @@
-import ballerina/ai;
+import ballerinax/ai.openai;
 
-final ai:Wso2ModelProvider wso2ModelProvider = check new (serviceUrl, accessToken);
+final openai:ModelProvider wso2ModelProvider = check new (accessToken, openai:GPT_4O_MINI);
