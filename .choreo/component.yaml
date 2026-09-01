@@ -14,7 +14,7 @@ endpoints:
   - name: math-tutor-ws
     displayName: Math Tutor WebSocket
     service:
-      basePath: /
+      basePath: /llm
       port: 9090
     type: WS
     networkVisibilities:
