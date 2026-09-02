@@ -4,7 +4,7 @@ import ballerina/websocket;
 import ballerina/http;
 
 listener http:Listener httpListener = check new (9090, httpVersion = "1.1");
-listener websocket:Listener wsListener = check new (httpListener);
+listener websocket:Listener wsListener = check new (9091);
 
 service on new integration:CloudVoiceListener(listenOn = wsListener) {
     isolated remote function onChatMessage(integration:ChatMessage message) returns string|error {
