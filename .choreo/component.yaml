@@ -15,7 +15,7 @@ endpoints:
     displayName: Math Tutor WebSocket
     service:
       basePath: /
-      port: 9090
+      port: 9091
     type: WS
     networkVisibilities:
       - Project
