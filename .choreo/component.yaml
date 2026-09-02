@@ -21,3 +21,4 @@ endpoints:
       - Project
       - Organization
       - Public
+    schemaFilePath: asyncapi.yaml
