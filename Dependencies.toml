@@ -5,7 +5,7 @@
 
 [ballerina]
 dependencies-toml-version = "2"
-distribution-version = "2201.13.4"
+distribution-version = "2201.13.5-20260806-095500-8ec89718"
 
 [[package]]
 org = "admin"
@@ -13,17 +13,15 @@ name = "test"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "ai"},
-	{org = "ballerina", name = "data.jsondata"},
 	{org = "ballerina", name = "http"},
 	{org = "ballerina", name = "io"},
 	{org = "ballerina", name = "log"},
-	{org = "ballerina", name = "uuid"},
 	{org = "ballerina", name = "websocket"},
-	{org = "ballerinax", name = "ai.openai"}
+	{org = "ballerinax", name = "ai.openai"},
+	{org = "ballerinax", name = "ai.wso2.integration"}
 ]
 modules = [
-	{org = "admin", packageName = "test", moduleName = "test"},
-	{org = "admin", packageName = "test", moduleName = "test.integration"}
+	{org = "admin", packageName = "test", moduleName = "test"}
 ]
 
 [[package]]
@@ -110,9 +108,6 @@ dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.object"}
 ]
-modules = [
-	{org = "ballerina", packageName = "data.jsondata", moduleName = "data.jsondata"}
-]
 
 [[package]]
 org = "ballerina"
@@ -137,7 +132,7 @@ dependencies = [
 [[package]]
 org = "ballerina"
 name = "http"
-version = "2.16.3"
+version = "2.16.6"
 dependencies = [
 	{org = "ballerina", name = "auth"},
 	{org = "ballerina", name = "cache"},
@@ -388,14 +383,11 @@ dependencies = [
 	{org = "ballerina", name = "lang.int"},
 	{org = "ballerina", name = "time"}
 ]
-modules = [
-	{org = "ballerina", packageName = "uuid", moduleName = "uuid"}
-]
 
 [[package]]
 org = "ballerina"
 name = "websocket"
-version = "2.15.3"
+version = "2.15.5"
 dependencies = [
 	{org = "ballerina", name = "auth"},
 	{org = "ballerina", name = "constraint"},
@@ -454,6 +446,23 @@ dependencies = [
 ]
 modules = [
 	{org = "ballerinax", packageName = "ai.openai", moduleName = "ai.openai"}
+]
+
+[[package]]
+org = "ballerinax"
+name = "ai.wso2.integration"
+version = "1.0.0"
+dependencies = [
+	{org = "ballerina", name = "ai"},
+	{org = "ballerina", name = "data.jsondata"},
+	{org = "ballerina", name = "http"},
+	{org = "ballerina", name = "io"},
+	{org = "ballerina", name = "log"},
+	{org = "ballerina", name = "uuid"},
+	{org = "ballerina", name = "websocket"}
+]
+modules = [
+	{org = "ballerinax", packageName = "ai.wso2.integration", moduleName = "ai.wso2.integration"}
 ]
 
 [[package]]
